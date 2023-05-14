@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     public float Turn = 1;
 
-    public Rigidbody rb;
+    
 
     void Start()
     {
