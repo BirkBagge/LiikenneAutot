@@ -15,7 +15,7 @@ public class Autot : MonoBehaviour
     private void Update()
     {   //Autot liikkuu
         transform.position += Vector3.forward * speed * Time.deltaTime;
-
+        
 
     }
     void OnCollisionEnter(Collision collision)
