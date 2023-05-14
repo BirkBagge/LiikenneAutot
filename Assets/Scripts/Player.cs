@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +11,7 @@ public class Player : MonoBehaviour
 
     public float Turn = 1;
 
-    
+    public float jarru = 1f;
 
     void Start()
     {
@@ -31,7 +32,10 @@ public class Player : MonoBehaviour
         {
             transform.position += Vector3.right * Turn * Time.deltaTime;
         }
-
+        if (Input.GetKey("s"))
+        {
+            transform.position += Vector3.back * speed * Time.deltaTime;
+        }
     }
 
 
